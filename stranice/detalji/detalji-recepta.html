@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalji recepta</title>
+    <meta name="description" content="Ovdje možete saznati više o receptu." />
+    <meta name="keywords" content="košer, recepti, jela, zdravo, fino" />
+    <link rel="icon" href="../../Slike/Logo/favicon.png" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/detaljiReceptaSadrzaj.js"></script>
+    <script type="module" src="../../js/scriptDetaljiRecepta.js"></script>
+  </head>
+  <body>
+      <!-- INTRO ANIMACIJA -->
+      <div class="intro-container-sivo">
+        <div class="intro-container">
+            <div class="intro-logo-container">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 76.3 221.9" style="enable-background:new 0 0 76.3 221.9;" xml:space="preserve" class="intro-logo-cijeli">
+                <style type="text/css">
+                    .pa0{fill:#FFF2E9;}
+                    .pa1{fill:#EA7628;}
+                </style>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M39.6,221.6c-1.2,0.1-2.3-0.3-3.1-1.1c-1.3-1.3-1.4-3.5-1.4-5.5c0-10.6,0-21.1,0-31.8V171l-0.3-0.1
+                        C10,165.3,4,146.3,3.4,131.3c1.1-0.1,2.2-0.1,3.3-0.1c20.7,0,37.1,17.4,37.5,39.5c0.2,10.1,0.1,20.3,0.1,30.2c0,4.8,0,9.5,0,14.3
+                        c0,3.3-0.5,6.4-4.4,6.4L39.6,221.6z"/>
+                    <path class="pa1" d="M6.7,130.7v0.8c20.4,0,36.7,17.2,37.1,39.1c0.2,10,0.1,20.2,0.1,30.1c0,4.8,0,9.6,0,14.4c0,4.3-1.1,6-4,6.1
+                        h-0.1c-1.1,0.1-2.1-0.3-2.9-1c-1.2-1.2-1.3-3.3-1.3-5.3c0-10.6,0-21.3,0-31.8v-12.5l-0.6-0.1c-24.3-5.5-30.4-24-31.1-38.9
+                        c1-0.1,1.9-0.1,2.9-0.1L6.7,130.7 M6.8,130.8c-1.2,0-2.4,0.1-3.6,0.2c0.7,19.1,9.4,35.3,31.7,40.4c0,14.7,0,29.2,0,43.6
+                        c0,3.6,0.6,7,4.9,7h0.1c4.2-0.1,4.8-3.4,4.8-6.8c0-14.8,0.2-29.7,0-44.5C44.3,148,27.4,130.8,6.8,130.8L6.8,130.8z"/>
+                </g>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M47.7,141.8c6.8-8.9,17.5-10.6,28.1-11.2c0.1,17.9-8.3,31.9-20.5,34.4L47.7,141.8z"/>
+                    <path class="pa1" d="M75.5,131.1c0,17.4-8.1,31-19.9,33.5l-7.4-22.7C54.7,133.4,65.1,131.6,75.5,131.1 M76.2,130.3
+                        c-11.4,0.5-22.1,2.4-28.9,11.5c2.7,8.4,5.2,16,7.7,23.7C67.1,163.3,76.4,149.5,76.2,130.3L76.2,130.3z"/>
+                </g>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M51.6,123.7c-0.4-1.6-0.9-3.2-1.3-4.9c-1.4-5.1-2.9-10.5-4.1-15.8c-0.2-0.9,0.7-2.5,1.6-3.6
+                        c7.5-9.4,18-11,28.3-11.2C75.5,108.2,66.6,121.1,51.6,123.7z"/>
+                    <path class="pa1" d="M75.6,88.6c-0.5,19.4-9.1,32-23.7,34.6l-1.2-4.5c-1.4-5.1-2.9-10.5-4.1-15.7c-0.1-0.6,0.5-2,1.5-3.2
+                        C55.3,90.6,65.5,88.9,75.6,88.6 M76.3,87.8c-11.1,0.2-21.5,2.1-29,11.4c-0.9,1.1-1.9,2.8-1.6,3.9c1.7,7,3.7,14,5.5,21
+                        C65.3,121.9,75.9,110.3,76.3,87.8L76.3,87.8z"/>
+                </g>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M36,125.4c-8.5,0.1-16.6-3.2-22.6-9.2C6.8,109.4,3.2,99.7,3.2,88.6c1.3-0.1,2.5-0.2,3.8-0.2
+                        c19.5,0,32.8,14.7,33,36.7C38.7,125.3,37.4,125.4,36,125.4z"/>
+                    <path class="pa1" d="M7,88.1v0.8c9.4,0,17.5,3.5,23.4,10.1s9,15.5,9.2,25.9c-1.2,0.1-2.4,0.2-3.6,0.2c-8.4,0.1-16.4-3.1-22.3-9.1
+                        C7.2,109.3,3.6,99.8,3.6,89c1.1-0.1,2.3-0.2,3.4-0.2V88.1 M7,88.1c-1.4,0-2.8,0.1-4.2,0.2c-0.2,22,13.9,37.4,33.2,37.4
+                        c1.5,0,2.9-0.1,4.3-0.2C40.3,103.2,26.6,88.1,7,88.1L7,88.1z"/>
+                </g>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M48.3,81.8c-0.3-1.3-0.6-2.7-0.9-4.1c-0.9-4.1-1.9-8.3-2.7-12.5c-0.2-1,0.6-2.5,1.4-3.4
+                        c2.6-3.4,5.3-6.7,8.3-9.9c1.5-1.6,3.4-2.8,5.5-3.5c3.8-1,7.6-1.7,11.6-2.5c1.4-0.3,2.9-0.6,4.4-0.9C75.6,66.8,65.8,79.8,48.3,81.8z
+                        "/>
+                    <path class="pa1" d="M75.5,45.5c-0.2,10.8-2.8,19.4-7.7,25.6c-4.6,5.8-11.1,9.3-19.2,10.2c-0.3-1.2-0.6-2.5-0.8-3.7
+                        c-0.9-4.1-1.9-8.3-2.7-12.5C45,64.3,45.7,63,46.4,62c2.6-3.4,5.3-6.7,8.2-9.9c1.4-1.6,3.3-2.8,5.3-3.4c3.8-1,7.6-1.7,11.6-2.5
+                        L75.5,45.5 M76.3,44.6c-5.6,1.1-11.1,2-16.5,3.4c-2.2,0.7-4.1,1.9-5.7,3.6c-2.9,3.2-5.7,6.5-8.3,9.9c-0.8,1-1.6,2.6-1.4,3.7
+                        c1,5.7,2.4,11.3,3.7,16.9C64.8,80.5,76.1,68.2,76.3,44.6L76.3,44.6z"/>
+                </g>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M33.5,82.4C13,82.4,0.6,68.7,0.4,45.7C23.8,46,35.1,57.3,37,82.3C35.8,82.4,34.7,82.4,33.5,82.4z"/>
+                    <path class="pa1" d="M0.8,46.1c22.9,0.4,33.9,11.5,35.8,35.8c-1,0.1-2,0.1-3,0.1C23,82,14.8,78.6,9,71.7C3.8,65.5,1,56.7,0.8,46.1
+                        M0.1,45.3C0.2,67,11.2,82.8,33.6,82.8c1.2,0,2.5-0.1,3.9-0.1C35.5,55.2,22.3,45.5,0.1,45.3L0.1,45.3z"/>
+                </g>
+                <g class="intro-logo-dio">
+                    <path class="pa0" d="M40,52.6C33.2,48,28.7,40.6,27.8,32.4c-1.3-10.8,2.9-22.4,11.6-31.9C47.7,8.8,52,17.6,52.1,26.6
+                        S48.1,44.3,40,52.6z"/>
+                    <path class="pa1" d="M39.4,1.1c8.1,8.1,12.3,16.7,12.4,25.5S47.9,43.9,40,52.1C33.3,47.5,29,40.3,28.1,32.4
+                        C26.9,21.8,30.9,10.5,39.4,1.1 M39.4,0c-16.6,17.9-16.2,41.9,0.7,53C56.9,36,56.7,16.9,39.4,0z"/>
+                </g>
+            </svg>
+            </div>
+            <div class="intro-tekst">
+                <span class="intro-tekst-slovo">R</span>
+                <span class="intro-tekst-slovo">E</span>
+                <span class="intro-tekst-slovo">C</span>
+                <span class="intro-tekst-slovo">E</span>
+                <span class="intro-tekst-slovo">P</span>
+                <span class="intro-tekst-slovo">T</span>
+            </div>
+        </div>
+    </div>
+    <header>
+      <nav>
+        <h1 class="fs-xxl ff-naslov text-primarna-800 | logo">
+          <a href="../index.html">KOŠER</a>
+        </h1>
+        <div>
+          <ul class="navigacija">
+            <li><a href="../../index.html">Početna</a></li>
+            <div class="dropdown-container">
+              <li class="nacin-zivot">Način Života</li>
+              <div class="dropdown-content">
+                <li><a href="../recepti.html">Recepti</a></li>
+                <li><a href="../objave.html">Objave</a></li>
+              </div>
+            </div>
+            <li><a href="../o-koseru.html">O Košeru</a></li>
+            <li><a href="../o-nama.html">O Nama</a></li>
+          </ul>
+        </div>
+        <div class="sendvic-gumb">
+          <a href="../../stranice/kontaktirajte-nas.html" class="konakt-btn">
+            <button class="button | nav-button">Kontaktirajte nas</button>
+          </a>
+          <div id="sendvic" class="sendvic-navigacija">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="detalji-recepta-sadrzaj" class="sekcija-detalji-recepta">
+        <!-- Ispis sadržaja preko JSON-a -->
+      </section>
+    </main>
+    <footer class="bg-primarna-400">
+      <div class="footer-gornji">
+        <h1 class="fs-l ff-naslov">KOŠER</h1>
+        <div>
+          <ul class="navigacija-footer">
+            <li><a href="../../index.html">Početna</a></li>
+            <li><a href="../recepti.html">Način Života</a></li>
+            <li><a href="../o-koseru.html">O košeru</a></li>
+            <li><a href="../o-nama.html">O nama</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mreze">
+        <a href="https://www.facebook.com/">
+          <img
+            src="../../Slike/Ilustracije/Ikone/logo-facebook.svg"
+            alt="Facebook ikona"
+          />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img
+            src="../../Slike/Ilustracije/Ikone/logo-instagram.svg"
+            alt="Instagram ikona"
+          />
+        </a>
+        <a href="https://twitter.com/">
+          <img
+            src="../../Slike/Ilustracije/Ikone/logo-twitter.svg"
+            alt="Twitter ikona"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
